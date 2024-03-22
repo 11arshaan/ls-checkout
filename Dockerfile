@@ -29,6 +29,7 @@ COPY --link . .
 
 # Build application
 RUN npm run build
+RUN npx prisma generate
 
 # Remove development dependencies
 RUN npm prune --omit=dev
