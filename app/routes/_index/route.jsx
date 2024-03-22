@@ -97,7 +97,7 @@ const StandardMerchantPage = () => {
   const placeHolderOnChange = useCallback(value => 'woo')
 
   return (
-    <Page title="checkout" narrowWidth>
+    <Page narrowWidth>
      
        
         <Form
@@ -210,10 +210,10 @@ const StandardMerchantPage = () => {
 
             
             <InlineStack gap="200" align='end' >
-            <Button variant="primary" submit>
-              Submit
+            <Button size="large" variant="primary" submit fullWidth>
+              Pay Now
             </Button>
-            <Button variant="primary" tone="critical" url="https://loopscope.io" >Cancel</Button>
+           
             </InlineStack>
           </FormLayout>
       </Card>
